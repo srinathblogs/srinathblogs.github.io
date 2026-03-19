@@ -3,8 +3,7 @@ layout: post
 title: "From Tech Debt to Clean Build: A Script-Driven AI Approach"
 date: 2026-01-05 14:37:33 +0000
 author: srinath
-categories: [Tech, Refactoring]
-tags: [AI, refactoring, dotnet, python]
+tags: [AI, Refactoring]
 toc: true
 ---
 
