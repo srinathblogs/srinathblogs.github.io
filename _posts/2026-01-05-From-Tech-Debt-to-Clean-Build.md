@@ -25,13 +25,15 @@ An xUnit test project uses `static` fields and methods throughout. These should 
 
 > This is a controlled example. The memory impact is modest, but it demonstrates how AI can be used systematically to fix a repeated pattern across an entire codebase.
 
+---
+
 ## The Workflow
 
 The key idea: break the refactor into small, deterministic steps. Use AI only to generate tools (regex, scripts), not to make decisions about the code. Here is how the flow shall look like
 
 ![worflow image](../assets/img/static-removal-workflow.png)
 
----
+
 
 ### Step 1 — Identify the Pattern
 
@@ -43,7 +45,7 @@ following C# syntax rules.
 
 Use the regex in VS Code or Vim to search the project. Verify it matches only what you intend before touching any files.
 
----
+
 
 ### Step 2 — Remove the Keyword in Batches
 
@@ -58,7 +60,7 @@ Review the script output before running it. Work in batches so you can check the
 
 **Pitfall:** Some `static` declarations are intentional. Shared state across tests, constants, or singleton-style test fixtures are valid uses of `static`. The script will not know the difference. If you remove a `static` that was there for a reason, the build may pass but tests may fail or behave incorrectly. Keep an eye on test results after each batch and be ready to revert specific files via git if needed.
 
----
+
 
 ### Step 3 — Fix Compilation Errors
 
