@@ -33,7 +33,7 @@ The key idea: break the refactor into small, deterministic steps. Use AI only to
 
 ---
 
-## Step 1 — Identify the Pattern
+### Step 1 — Identify the Pattern
 
 **Prompt:**
 ```
@@ -45,7 +45,7 @@ Use the regex in VS Code or Vim to search the project. Verify it matches only wh
 
 ---
 
-## Step 2 — Remove the Keyword in Batches
+### Step 2 — Remove the Keyword in Batches
 
 **Prompt:**
 ```
@@ -60,7 +60,7 @@ Review the script output before running it. Work in batches so you can check the
 
 ---
 
-## Step 3 — Fix Compilation Errors
+### Step 3 — Fix Compilation Errors
 
 Removing `static` will produce [CS0120](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0120) errors where instance members are called from a static context.
 
