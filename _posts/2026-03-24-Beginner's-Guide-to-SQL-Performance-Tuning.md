@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beginner's Guide to SQL Query Performance Tuning"
-date: 2026-01-05 14:37:33 +0000
+date: 2026-03-24 20:00:00 +0000
 author: srinath
 tags: [SQL, Performance]
 toc: true
