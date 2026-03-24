@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From Tech Debt to Clean Build: A Script-Driven AI Approach"
+title: "Deterministic Refactoring with Agentic AI"
 date: 2026-01-05 14:37:33 +0000
 author: srinath
 tags: [AI, Refactoring]
